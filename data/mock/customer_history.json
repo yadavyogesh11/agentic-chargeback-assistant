@@ -1,0 +1,26 @@
+[
+  {
+    "customer_id": "CUST-001",
+    "account_created": "2024-03-15",
+    "total_transactions": 18,
+    "previous_disputes": 0,
+    "successful_transactions": 18,
+    "risk_level": "LOW"
+  },
+  {
+    "customer_id": "CUST-002",
+    "account_created": "2023-11-20",
+    "total_transactions": 42,
+    "previous_disputes": 2,
+    "successful_transactions": 40,
+    "risk_level": "MEDIUM"
+  },
+  {
+    "customer_id": "CUST-003",
+    "account_created": "2025-01-10",
+    "total_transactions": 7,
+    "previous_disputes": 3,
+    "successful_transactions": 6,
+    "risk_level": "HIGH"
+  }
+]

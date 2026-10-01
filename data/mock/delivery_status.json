@@ -1,0 +1,23 @@
+[
+    {
+        "transaction_id": "TXN-10001",
+        "delivery_status": "DELIVERED",
+        "delivery_date": "2026-09-15",
+        "carrier": "Synthetic Express",
+        "tracking_id": "TRK-10001"
+    },
+    {
+        "transaction_id": "TXN-10002",
+        "delivery_status": "IN-TRANSIT",
+        "delivery_date": null,
+        "carrier": "Synthetic Express",
+        "tracking_id": "TRK-10002"
+    },
+    {
+        "transaction_id": "TXN-10003",
+        "delivery_status": "NOT-DELIVERED",
+        "delivery_date": null,
+        "carrier": "Synthetic Express",
+        "tracking_id": "TRK-10003"
+    }
+]

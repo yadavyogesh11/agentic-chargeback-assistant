@@ -1,0 +1,235 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Chargeback Dispute Case",
+  "description": "Structured schema for the Agentic Chargeback Dispute Resolution Assistant",
+  "type": "object",
+
+  "required": [
+    "case_id",
+    "reason_code",
+    "transaction",
+    "dispute",
+    "evidence"
+  ],
+
+  "properties": {
+
+    "case_id": {
+      "type": "string"
+    },
+
+    "reason_code": {
+      "type": "string",
+      "enum": [
+        "FRAUD_CARD_NOT_PRESENT",
+        "ITEM_NOT_RECEIVED",
+        "DUPLICATE_PROCESSING",
+        "CREDIT_NOT_PROCESSED",
+        "NOT_AS_DESCRIBED",
+        "CANCELLED_RECURRING"
+      ]
+    },
+
+    "transaction": {
+      "type": "object",
+      "properties": {
+        "transaction_id": {
+          "type": "string"
+        },
+        "amount": {
+          "type": "number",
+          "minimum": 0
+        },
+        "currency": {
+          "type": "string"
+        },
+        "transaction_date": {
+          "type": "string"
+        }
+      }
+    },
+
+    "customer": {
+      "type": "object",
+      "properties": {
+        "customer_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        }
+      }
+    },
+
+    "merchant": {
+      "type": "object",
+      "properties": {
+        "merchant_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      }
+    },
+
+    "dispute": {
+      "type": "object",
+      "required": [
+        "received_date"
+      ],
+      "properties": {
+        "received_date": {
+          "type": "string"
+        },
+        "response_deadline": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    },
+
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "evidence_id",
+          "type",
+          "source"
+        ],
+        "properties": {
+          "evidence_id": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "content": {
+            "type": "string"
+          }
+        }
+      }
+    },
+
+    "investigation": {
+      "type": "object",
+      "properties": {
+        "transaction": {},
+        "customer_history": {},
+        "delivery_status": {},
+        "prior_disputes": {},
+        "merchant_profile": {}
+      }
+    },
+
+    "validation": {
+      "type": "object",
+      "properties": {
+        "missing_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "conflicts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "deadline_valid": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "required_evidence_complete": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      }
+    },
+
+    "decision": {
+      "type": "object",
+      "properties": {
+        "action": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "Accept",
+            "Contest",
+            "Request More Info",
+            null
+          ]
+        },
+        "confidence": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "rationale": {
+          "type": "string"
+        },
+        "citations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+
+    "escalation": {
+      "type": "object",
+      "properties": {
+        "required": {
+          "type": "boolean"
+        },
+        "reason": {
+          "type": "string"
+        }
+      }
+    },
+
+    "audit": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "timestamp": {
+            "type": "string"
+          },
+          "step": {
+            "type": "string"
+          },
+          "component": {
+            "type": "string"
+          },
+          "details": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

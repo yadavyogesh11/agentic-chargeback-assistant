@@ -1,0 +1,74 @@
+{
+  "case_id": "CASE-001",
+
+  "reason_code": "ITEM_NOT_RECEIVED",
+
+  "transaction": {
+    "transaction_id": "TXN-10001",
+    "amount": 12500,
+    "currency": "INR",
+    "transaction_date": "2026-09-10"
+  },
+
+  "customer": {
+    "customer_id": "CUST-001",
+    "name": "Test Customer",
+    "email": "customer001@example.com",
+    "address": "Test Address, Mumbai, Maharashtra"
+  },
+
+  "merchant": {
+    "merchant_id": "MER-001",
+    "name": "Test Electronics Store"
+  },
+
+  "dispute": {
+    "received_date": "2026-09-20",
+    "response_deadline": "2026-10-05",
+    "description": "Customer states that the purchased item was not received."
+  },
+
+  "evidence": [
+    {
+      "evidence_id": "EVD-001",
+      "type": "dispute_notice",
+      "source": "synthetic_dispute_notice",
+      "content": "Customer disputes the transaction stating that the purchased item was not received."
+    },
+    {
+      "evidence_id": "EVD-002",
+      "type": "invoice",
+      "source": "synthetic_invoice",
+      "content": "Invoice confirms transaction TXN-10001 for INR 12500."
+    }
+  ],
+
+  "investigation": {
+    "transaction": null,
+    "customer_history": null,
+    "delivery_status": null,
+    "prior_disputes": null,
+    "merchant_profile": null
+  },
+
+  "validation": {
+    "missing_fields": [],
+    "conflicts": [],
+    "deadline_valid": null,
+    "required_evidence_complete": null
+  },
+
+  "decision": {
+    "action": null,
+    "confidence": null,
+    "rationale": "",
+    "citations": []
+  },
+
+  "escalation": {
+    "required": false,
+    "reason": ""
+  },
+
+  "audit": []
+}

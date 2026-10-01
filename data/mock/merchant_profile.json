@@ -1,0 +1,29 @@
+[
+  {
+    "merchant_id": "MER-001",
+    "merchant_name": "Test Electronics Store",
+    "business_type": "Electronics",
+    "account_status": "ACTIVE",
+    "merchant_since": "2022-06-10",
+    "previous_chargebacks": 2,
+    "chargeback_rate": 0.01
+  },
+  {
+    "merchant_id": "MER-002",
+    "merchant_name": "Test Fashion Store",
+    "business_type": "Fashion",
+    "account_status": "ACTIVE",
+    "merchant_since": "2021-04-20",
+    "previous_chargebacks": 8,
+    "chargeback_rate": 0.04
+  },
+  {
+    "merchant_id": "MER-003",
+    "merchant_name": "Test Subscription Store",
+    "business_type": "Subscription",
+    "account_status": "ACTIVE",
+    "merchant_since": "2023-01-15",
+    "previous_chargebacks": 12,
+    "chargeback_rate": 0.06
+  }
+]

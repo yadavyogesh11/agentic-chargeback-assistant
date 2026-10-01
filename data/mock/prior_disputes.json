@@ -1,0 +1,37 @@
+[
+  {
+    "customer_id": "CUST-001",
+    "disputes": []
+  },
+  {
+    "customer_id": "CUST-002",
+    "disputes": [
+      {
+        "dispute_id": "DISP-001",
+        "reason_code": "DUPLICATE_PROCESSING",
+        "amount": 4500,
+        "status": "RESOLVED",
+        "outcome": "ACCEPTED"
+      }
+    ]
+  },
+  {
+    "customer_id": "CUST-003",
+    "disputes": [
+      {
+        "dispute_id": "DISP-002",
+        "reason_code": "ITEM_NOT_RECEIVED",
+        "amount": 8999,
+        "status": "RESOLVED",
+        "outcome": "CONTESTED"
+      },
+      {
+        "dispute_id": "DISP-003",
+        "reason_code": "FRAUD_CARD_NOT_PRESENT",
+        "amount": 3200,
+        "status": "CLOSED",
+        "outcome": "ACCEPTED"
+      }
+    ]
+  }
+]

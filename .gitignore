@@ -1,0 +1,10 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+
+
+# .env - keeps your future OpenAI API Key out of GitHub
+# .venv/ - ignores Python virtual enivronment files
+# __pycache__/ - ignores Python temporary cache folder
+# *.pyc - ignores compiled Python files

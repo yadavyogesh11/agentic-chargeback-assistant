@@ -1,0 +1,35 @@
+[
+  {
+    "transaction_id": "TXN-10001",
+    "customer_id": "CUST-001",
+    "merchant_id": "MER-001",
+    "amount": 12500,
+    "currency": "INR",
+    "transaction_date": "2026-09-10",
+    "status": "COMPLETED",
+    "payment_method": "CARD",
+    "card_present": false
+  },
+  {
+    "transaction_id": "TXN-10002",
+    "customer_id": "CUST-002",
+    "merchant_id": "MER-002",
+    "amount": 4500,
+    "currency": "INR",
+    "transaction_date": "2026-09-11",
+    "status": "COMPLETED",
+    "payment_method": "CARD",
+    "card_present": true
+  },
+  {
+    "transaction_id": "TXN-10003",
+    "customer_id": "CUST-003",
+    "merchant_id": "MER-003",
+    "amount": 8999,
+    "currency": "INR",
+    "transaction_date": "2026-09-12",
+    "status": "COMPLETED",
+    "payment_method": "CARD",
+    "card_present": false
+  }
+]
