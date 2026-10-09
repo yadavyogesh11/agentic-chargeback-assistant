@@ -84,6 +84,14 @@ def get_merchant_profile(merchant_id):
         "error": f"Merchant profile for {merchant_id} not found."
     }
 
+TOOLS_REGISTRY = {
+        "get_transaction": get_transaction,
+        "get_customer_history": get_customer_history,
+        "get_delivery_status": get_delivery_status,
+        "get_prior_disputes": get_prior_disputes,
+        "get_merchant_profile": get_merchant_profile
+    }
+
 if __name__ == "__main__":
 
     print(" === MOCK TOOLS TEST ===")

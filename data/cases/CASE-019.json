@@ -1,0 +1,18 @@
+{
+  "case_id": "CASE-019",
+  "reason_code": "NOT_AS_DESCRIBED",
+  "transaction_id": "TXN-10002",
+  "customer_id": "CUST-002",
+  "merchant_id": "MER-002",
+  "amount": 4500,
+  "currency": "INR",
+  "transaction_date": "2026-09-11",
+  "merchant_name": "Test Fashion Store",
+  "response_deadline": "2026-12-31",
+  "evidence": [
+    {
+      "type": "dispute_notice",
+      "content": "Customer disputes product description."
+    }
+  ]
+}

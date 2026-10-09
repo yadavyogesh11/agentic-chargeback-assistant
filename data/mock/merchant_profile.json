@@ -6,7 +6,8 @@
     "account_status": "ACTIVE",
     "merchant_since": "2022-06-10",
     "previous_chargebacks": 2,
-    "chargeback_rate": 0.01
+    "chargeback_rate": 0.01,
+    "description_status": "AS_DESCRIBED"
   },
   {
     "merchant_id": "MER-002",
@@ -15,7 +16,8 @@
     "account_status": "ACTIVE",
     "merchant_since": "2021-04-20",
     "previous_chargebacks": 8,
-    "chargeback_rate": 0.04
+    "chargeback_rate": 0.04,
+    "description_status": "NOT_AS_DESCRIBED"
   },
   {
     "merchant_id": "MER-003",
@@ -24,6 +26,7 @@
     "account_status": "ACTIVE",
     "merchant_since": "2023-01-15",
     "previous_chargebacks": 12,
-    "chargeback_rate": 0.06
+    "chargeback_rate": 0.06,
+    "description_status": "AS_DESCRIBED"
   }
 ]

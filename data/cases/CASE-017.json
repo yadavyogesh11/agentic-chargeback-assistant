@@ -1,0 +1,22 @@
+{
+  "case_id": "CASE-017",
+  "reason_code": "CREDIT_NOT_PROCESSED",
+  "transaction_id": "TXN-10001",
+  "customer_id": "CUST-001",
+  "merchant_id": "MER-001",
+  "amount": 12500,
+  "currency": "INR",
+  "transaction_date": "2026-09-10",
+  "merchant_name": "Test Electronics Store",
+  "response_deadline": "2026-12-31",
+  "evidence": [
+    {
+      "type": "credit_evidence",
+      "content": "Credit was processed."
+    },
+    {
+      "type": "dispute_notice",
+      "content": "Customer says credit was not processed."
+    }
+  ]
+}

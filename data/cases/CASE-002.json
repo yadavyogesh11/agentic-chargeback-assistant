@@ -1,0 +1,18 @@
+{
+  "case_id": "CASE-002",
+  "reason_code": "ITEM_NOT_RECEIVED",
+  "transaction_id": "TXN-10003",
+  "customer_id": "CUST-003",
+  "merchant_id": "MER-003",
+  "amount": 8999,
+  "currency": "INR",
+  "transaction_date": "2026-09-12",
+  "merchant_name": "Test Subscription Store",
+  "response_deadline": "2026-12-31",
+  "evidence": [
+    {
+      "type": "dispute_notice",
+      "content": "Customer claims item was not received."
+    }
+  ]
+}

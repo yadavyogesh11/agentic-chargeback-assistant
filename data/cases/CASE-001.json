@@ -3,6 +3,8 @@
 
   "reason_code": "ITEM_NOT_RECEIVED",
 
+  "response_deadline": "2026-12-31",
+
   "transaction": {
     "transaction_id": "TXN-10001",
     "amount": 12500,
@@ -24,7 +26,7 @@
 
   "dispute": {
     "received_date": "2026-09-20",
-    "response_deadline": "2026-10-05",
+    "response_deadline": "2026-12-31",
     "description": "Customer states that the purchased item was not received."
   },
 
